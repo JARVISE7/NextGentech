@@ -1,0 +1,59 @@
+@import "~font-awesome/css/font-awesome.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind already included; just additional resets if needed */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F3F4F6;
+  color: #111827;
+}
+a {
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+.font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+:root {
+  --background-light: #ffffff;
+  --foreground-light: #111827;
+
+  --background-dark: #1a1a1a;
+  --foreground-dark: #e5e7eb;
+}
+
+.dark {
+  --background: var(--background-dark);
+  --foreground: var(--foreground-dark);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.animate-slideIn {
+  animation: slideIn 0.4s ease-in-out;
+}
+
+

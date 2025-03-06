@@ -1,0 +1,30 @@
+{
+  "name": "my-ecommerce-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "framer-motion": "^12.4.5",
+    "lucide-react": "^0.475.0",
+    "next": "^15.2.0",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-icons": "^5.4.0",
+    "three": "^0.173.0",
+    "vanta": "^0.5.24"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
