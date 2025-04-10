@@ -36,13 +36,16 @@ const Categories = () => {
             <Link href={category.link} key={index} className="group">
               <div className="relative rounded-xl shadow-lg overflow-hidden h-64 flex items-center justify-center">
                 {/* Background Image */}
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute inset-0 w-full h-full group-hover:scale-110 transition-transform duration-300"
-                />
+                <div className="absolute inset-0 w-full h-full">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    className="group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-50 group-hover:bg-opacity-60 transition duration-300" />
@@ -67,4 +70,6 @@ const Categories = () => {
 };
 
 export default Categories;
+
+
 

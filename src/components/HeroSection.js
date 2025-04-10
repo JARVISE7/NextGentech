@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section
@@ -9,18 +11,17 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center">
-        <h1 className="text-5xl font-extrabold leading-tight sm:text-6xl mb-4 animate__animated animate__fadeIn animate__delay-1s bg-gradient-to-r from-blue-700 via-blue-500 to-white bg-clip-text text-transparent">
+        <h1 className="text-5xl font-extrabold leading-tight sm:text-6xl mb-4 bg-gradient-to-r from-blue-700 via-blue-500 to-white bg-clip-text text-transparent animate-fadeIn animate-delay-1s">
           Discover the Best Electronics
         </h1>
-        <p className="text-lg sm:text-2xl mb-6 animate__animated animate__fadeIn animate__delay-2s bg-gradient-to-r from-blue-500 via-white to-blue-300 bg-clip-text text-transparent">
+        <p className="text-lg sm:text-2xl mb-6 bg-gradient-to-r from-blue-500 via-white to-blue-300 bg-clip-text text-transparent animate-fadeIn animate-delay-2s">
           Get the latest gadgets at unbeatable prices!
         </p>
-        <a
-          href="#products"
-          className="inline-block bg-blue-500 text-white py-3 px-8 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105"
-        >
-          Shop Now
-        </a>
+        <Link href="/signin" passHref>
+          <span className="inline-block bg-blue-500 text-white py-3 px-8 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 cursor-pointer">
+            Shop Now
+          </span>
+        </Link>
       </div>
     </section>
   );

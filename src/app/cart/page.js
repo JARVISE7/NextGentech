@@ -34,7 +34,7 @@ export default function CartPage() {
           </div>
           <p className="text-gray-500 dark:text-gray-400 text-lg mb-6">Your cart is empty!</p>
           <Link
-            href="/products"
+            href="/product"
             className="bg-blue-900 dark:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 dark:hover:bg-blue-600"
           >
             Continue Shopping

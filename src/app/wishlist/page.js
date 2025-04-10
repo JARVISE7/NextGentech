@@ -12,7 +12,7 @@ export default function WishlistPage() {
     <div className="p-6 max-w-7xl mx-auto">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Your Wishlist</h2>
-        <Link href="/products" className="text-blue-600 dark:text-blue-400 hover:underline">
+        <Link href="/product" className="text-blue-600 dark:text-blue-400 hover:underline">
           Continue Shopping →
         </Link>
       </div>
@@ -21,7 +21,7 @@ export default function WishlistPage() {
         <div className="flex flex-col items-center justify-center h-64 text-gray-500 dark:text-gray-400">
           <p className="text-lg">Your wishlist is empty.</p>
           <Link
-            href="/products"
+            href="/product"
             className="mt-4 px-6 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-lg shadow hover:bg-blue-700 dark:hover:bg-blue-600 transition"
           >
             Browse Products

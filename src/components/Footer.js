@@ -46,7 +46,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition duration-300">About Us</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-white transition duration-300">Privacy Policy</Link></li>
               <li><Link href="/terms-conditions" className="hover:text-white transition duration-300">Terms & Conditions</Link></li>
-              <li><Link href="/shipping-policy" className="hover:text-white transition duration-300">Shipping Policy</Link></li>
+              <li><Link href="/blog" className="hover:text-white transition duration-300">Blog Posts</Link></li>
             </ul>
           </div>
 

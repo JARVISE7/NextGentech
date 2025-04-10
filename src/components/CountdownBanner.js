@@ -64,6 +64,7 @@ const CountdownBanner = () => {
         <Image
           src="/headphone.png"
           alt="Headphone"
+          layout="intrinsic"
           width={500}
           height={500}
           className="mx-auto"
